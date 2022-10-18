@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/c636ad103d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <a  class="brand" href="index.html"><img src="/img/logo-no-background.png" alt="UrbanRead"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="maintenance.html">Best Sellers</a>
+            <a href="maintenance.html">About Us</a>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/urbanURread"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://twitter.com/urban_read"><i class="fa-brands fa-twitter fa-xl"></i></a>
+        </div>
+        <div class="nav-cart">
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+        </div>
+    </nav>
+    <div>
+        <h1 class="checkout-title">Checkout Form</h1>
+    </div>
+    </form>
+        <div class="checkout-container">
+            <div class="checkout-info">
+                <fieldset>
+                    <h3>Customer Info</h3>
+                    <div class="input-wrap">
+                        <input type="email" id="email" name="email" pattern=".*@.*\..*" required>
+                        <label for="email">Email</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <h3>Shipping Address</h3>
+                    <div class="input-wrap">
+                        <input type="text" id="fullname" name="fullname" required>
+                        <label for="fullname">Full Name</label>
+                        
+                        <select name="country" id="country" >
+                            <option value="brunei">Brunei</option>
+                            <option value="cambodia">Cambodia</option>
+                            <option value="easttimor">East Timor</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="laos">Laos</option>
+                            <option value="malaysia">Malaysia</option>
+                            <option value="myanmar">Myanmar</option>
+                            <option value="philippines" selected>Philippines</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="vietnam">Vietnam</option>
+                        </select>
+                        <label for="country">Country</label>
+
+                        <input type="text" id="address1" name="address1" required>
+                        <label for="address1">Address Line 1</label>
+
+                        <input type="text" id="address2" name="address2" required>
+                        <label for="address2">Address Line 2</label>
+                    
+                        <input type="text" id="city" name="city" required>
+                        <label for="city">City</label>
+
+                        <input type="text" id="district" name="district" required>
+                        <label for="district">District</label>
+                
+                        <input type="number" id="postal" name="postal" required>
+                        <label for="postal">Postal Code</label>
+
+                        <input type="tel" id="contact" name="contact" required>
+                        <label for="Contact">Contact Number</label>
+
+                    </div>    
+                </fieldset>
+
+                <fieldset class="paymentopt">
+                    <h3>Payment</h3>
+                    <label for="cod"><input type="radio" id="cod" name="pay_method" value="COD" class="pymtmethod" checked> Cash on Delivery</label><br>
+                    <label for="e-wallet"><input type="radio" id="e-wallet" name="pay_method" value="E-wallet" class="pymtmethod"> E-wallet</label> <br>
+                    <label for="online_banking"><input type="radio" id="online_banking" name="pay_method" value="Online Banking" class="pymtmethod"> Online Banking</label><br>
+                    <label for="card"><input type="radio" id="card" name="pay_method" value="Credit / Debit Card" class="pymtmethod"> Credit / Debit Card</label><br>
+                    <label for="googlepay"><input type="radio" id="googlepay" name="pay_method" value="Google Pay" class="pymtmethod"> Google Pay</label><br>
+                </fieldset>
+            </div>
+
+            <div class="checkout-card">
+                <div class="prodrev">
+                    <h3>Cart (4)</h3>
+                    <p><a href="#">1984</a> <span class="price">₱935.00</span></p>
+                    <p><a href="#">The Great Gatsby</a> <span class="price">₱935.00</span></p>
+                    <p><a href="#">To Kill A Mockingbird</a> <span class="price">₱484.00</span></p>
+                    <p><a href="#">Huckleberry Finn</a> <span class="price">₱489.00</span></p>
+                    <hr>
+                    <p class="price total">Total <span class="price total" >₱2,843.00</span></p>
+                </div>
+                <div class="placeorder-container">
+                    <a href="/thankyou.html"><input class="placeorder" type="submit" value="PLACE ORDER" /></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </form> 
+    <footer>
+        <p>Jay Caguin <i class="fa-solid fa-copyright"></i> 2022</p>
+    </footer>
+</body>
+</html>
